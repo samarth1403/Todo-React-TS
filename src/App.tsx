@@ -1,16 +1,11 @@
-import React, { useEffect, useState } from "react";
 import {
-  Container,
-  TextField,
-  Button,
-  AppBar,
-  Toolbar,
-  Typography,
-  Stack,
+  AppBar, Button, Container, Stack, TextField, Toolbar,
+  Typography
 } from "@mui/material";
+import { useEffect, useState } from "react";
 import TodoItem from "./Components/TodoItem";
-import { saveTodos } from "./utils/saveTodos";
 import { getTodos } from "./utils/getTodos";
+import { saveTodos } from "./utils/saveTodos";
 
 const App = () => {
   const [todos, setTodos] = useState<TodoItemType[]>(getTodos());

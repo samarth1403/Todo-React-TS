@@ -1,6 +1,6 @@
-import React,{useState} from "react";
-import {Paper , Typography , Button , Stack , Checkbox, TextField} from "@mui/material";
-import {Delete , Edit} from '@mui/icons-material';
+import { Delete, Edit } from '@mui/icons-material';
+import { Button, Checkbox, Paper, Stack, TextField, Typography } from "@mui/material";
+import { useState } from "react";
 
 type PropsType = {
   todo: TodoItemType;
